@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>CapaDatos</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImportedNamespaces>System.Data=False,Microsoft.VisualBasic=True,System=True,System.Collections=True,System.Collections.Generic=True,System.Diagnostics=True,System.Linq=True,System.Xml.Linq=True,System.Threading.Tasks=True,CapaDatos=True</ImportedNamespaces>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.vbproj" />
+  </ItemGroup>
+
+</Project>
